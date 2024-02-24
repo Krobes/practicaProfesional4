@@ -1,30 +1,37 @@
 @font-face {
   font-family: OpenSans-semibold;
   src: url("../fonts/OpenSans-SemiBold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: OpenSans-regular;
   src: url("../fonts/OpenSans-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: OpenSans-bold;
   src: url("../fonts/OpenSans-Bold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Rajhdani-regular;
   src: url("../fonts/Rajdhani-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Rajhdani-semibold;
   src: url("../fonts/Rajdhani-SemiBold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Rajhdani-bold;
   src: url("../fonts/Rajdhani-Bold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Inter-medium;
   src: url("../fonts/Inter-Medium.ttf");
+  font-display: swap;
 }
 * {
   padding: 0;
@@ -43,7 +50,7 @@ body {
 
 #container {
   display: grid;
-  grid-template-rows: 0.5fr 5r 1fr;
+  grid-template-rows: 0.25fr 2fr 0.25fr;
   grid-template-columns: 1fr;
 }
 
