@@ -329,7 +329,7 @@ input{
   border-radius: 55px;
 }
 
-button{
+button, .tabButton, .movButton{
   border-style: none;
   border-radius: 4px;
   padding: 4%;
@@ -340,7 +340,15 @@ button{
   font-family: Rajdhani-semibold;
 }
 
+.titNot > a{
+  margin-top: 5%;
+}
+
 button:hover{
+  cursor: pointer;
+}
+
+a:hover{
   cursor: pointer;
 }
 

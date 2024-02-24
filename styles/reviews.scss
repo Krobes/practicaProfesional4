@@ -57,7 +57,7 @@ body {
 
 #container {
     display: grid;
-    grid-template-rows: 0.5fr 5r 1fr;
+    grid-template-rows: 0.1fr 7fr 0.1fr;
     grid-template-columns: 1fr;
 }
 
@@ -319,7 +319,7 @@ hr{
     padding-bottom: 30px;
 }
 
-button{
+button, .reviewMovil a, .botonTablet{
     border-style: none;
     border-radius: 4px;
     padding: 2%;
@@ -471,11 +471,10 @@ button:hover{
 
     .reviewTablet img{
         width:42vw;
-        height:42w;
         border-radius: 55px;
     }
 
-    button{
+    button, .reviewMovil a, .botonTablet{
        margin-bottom: 20px;
     }
 
@@ -557,11 +556,10 @@ button:hover{
 
     .reviewTablet img{
         width:40vw;
-        height:40w;
         max-width: 500px;
     }
 
-    button{
+    button, .reviewMovil a, .botonTablet{
        margin-bottom: 20px;
     }
 
