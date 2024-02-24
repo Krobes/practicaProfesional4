@@ -1,18 +1,22 @@
 @font-face {
   font-family: Rajhdani-regular;
   src: url("../fonts/Rajdhani-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Rajhdani-semibold;
   src: url("../fonts/Rajdhani-SemiBold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Rajhdani-bold;
   src: url("../fonts/Rajdhani-Bold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Inter-medium;
   src: url("../fonts/Inter-Medium.ttf");
+  font-display: swap;
 }
 * {
   padding: 0;
@@ -270,11 +274,11 @@ input {
 }
 
 .aprobado {
-  -webkit-text-stroke: 0.5px #149407;
+  -webkit-text-stroke: 0.2px #149407;
 }
 
 .suspenso {
-  -webkit-text-stroke: 0.5px #ff3026;
+  -webkit-text-stroke: 0.2x #ff3026;
 }
 
 #sorteoAct {
