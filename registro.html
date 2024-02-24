@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/registro.css" />
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <!-- Encabezado -->
+    <div id="encabezado">
+      <div id="imagen">
+        <img
+          id="title"
+          src="img/title.svg"
+          alt="Gameaffinity: Comunidad de videojuegos, críticas y noticias"
+        />
+      </div>
+      <nav>
+        <input type="checkbox" id="menyAvPaa" />
+        <label id="burger" for="menyAvPaa" class="burger-wrapper">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul id="meny">
+            <li id="inicio"><a href="index.html">INICIO</a></li>
+            <hr>
+            <li href="reviews.html" id="reviews"><a href="reviews.html">REVIEWS</a></li>
+            <hr>
+            <li href="buscar.html" id="buscar"><a href="buscar.html">BUSCAR</a></li>
+            <hr>
+            <li href="ranking.html" id="ranking"><a href="ranking.html">RANKING</a></li>
+            <hr>
+            <li href="entrar.html" id="entrar"><a href="entrar.html">ENTRAR</a></li>
+          </ul>
+      </nav>
+      <div class="decorador">
+        <span class="span1"></span>
+        <span class="span2"></span>
+        <span class="span3"></span>
+        <span class="span4"></span>
+      </div>
+      <div id="lupa">
+        <input type="text" placeholder="Busca tu juego" >
+        <img id="lupaimg" src="./img/magnifying-glass-solid.svg"/> 
+      </div>
+    </div>
+    <!-- Registro -->
+    <div class="formEntrar">
+      <span>CREA TU CUENTA GRATUITA</span> 
+      <div class="datoForm">
+           <p>Nombre de usuario</p>
+           <input placeholder="Introduce aquí tu nombre de usuario">
+      </div>
+      <div class="datoForm">
+        <p>E-mail</p>
+        <input placeholder="Introduce aquí tu e-mail">
+   </div>
+      <div class="datoForm">
+           <p>Contraseña</p>
+           <input type="password" placeholder="Introduce aquí tu contraseña">
+      </div>
+      <button>Iniciar sesión</button>
+      <p>¿Ya tienes una cuenta? <span><a href="entrar.html">Inicia sesión</a></span></p>
+  </div>
+   </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="circulo">
+          <a href="#title">
+            <img src="./img/flecha.png"/>
+          </a>
+        </div>
+        <div class="decorador">
+            <span class="span1"><a href="cookies.html">Privacidad</a></span>
+            <span class="span2"><a href="cookies.html">Términos</a></span>
+            <span class="span3"><a href="cookies.html">Cookies</a></span>
+            <span class="span4"><a href="faq.html">FAQ</a></span>
+          </div>
+        <div id="footerDatos">
+          <div id="redes">
+            <img src="./img/iconos.JPG"/>
+          </div>
+          <span>2023 GAMEAFFINITY.<br> Todos los derechos reservados | All Rights Reserved</span>
+        </div>
+      </div>
+    </div>    
+</body>
+</html>

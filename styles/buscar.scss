@@ -1,0 +1,566 @@
+@font-face {
+    font-family: OpenSans-semibold;
+    src: url("../fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: OpenSans-regular;
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: OpenSans-bold;
+    src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: Rajhdani-regular;
+    src: url("../fonts/Rajdhani-Regular.ttf");
+}
+
+@font-face {
+    font-family: Rajhdani-semibold;
+    src: url("../fonts/Rajdhani-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Rajhdani-bold;
+    src: url("../fonts/Rajdhani-Bold.ttf");
+}
+
+@font-face {
+    font-family: Inter-medium;
+    src: url("../fonts/Inter-Medium.ttf");
+}
+
+
+//Colores
+$amarillo: #ffc217;
+$azul: #4617e8;
+$verde: #149407;
+$rojo: #ff3026;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-family: Rajhdani-semibold;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+body {
+    background: linear-gradient(to bottom, #abd1cb, white);
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 0.5fr 5r 1fr;
+    grid-template-columns: 1fr;
+}
+
+#title {
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 18%;
+}
+
+//MENÚ
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*DESDE AQUI - ARREGLAR CON SASS*/
+#inicio{
+    color: $rojo;
+}
+
+#reviews{
+    color: $verde;
+}
+
+#buscar{
+    color: $amarillo;
+}
+
+
+#ranking{
+    color: $azul;
+}
+
+#entrar{
+    color: white;
+}
+/*HASTA AQUI - ARREGLAR CON SASS*/
+
+hr{
+    width: 10vw;
+}
+
+#burger {
+    position: absolute;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 7%;
+    right: 4%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+#burger > span {
+    height: 2px;
+    background-color: #000;
+    transition: 0.5s;
+}
+
+#menyAvPaa {
+    display: none;
+}
+
+#meny {
+    background: black;
+    width: 25%;
+    height: 60vh;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    transition: height 0.5s ease;
+    color: white;
+    text-align: center;
+    z-index: 999;
+    display: none;
+    align-items: center;
+}
+
+#meny li {
+    padding: 10px 4px 6px 3px;
+}
+
+#meny li:hover {
+    cursor: pointer;
+}
+
+#menyAvPaa:checked ~ #meny {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 2%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#menyAvPaa:checked ~ #burger > span {
+    background-color: white;
+}
+
+#menyAvPaa:checked ~ #burger > span:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+}
+
+#menyAvPaa:checked ~ #burger > span:nth-child(2) {
+    opacity: 0;
+}
+
+#menyAvPaa:checked ~ #burger > span:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+//Decorador
+.decorador{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 3%;
+    font-family: Rajhdani-semibold;
+    text-align: center;
+}
+
+.span1, .span2, .span3, .span4 {
+    flex: 1;  
+    padding: 10px;
+}
+
+.span1{
+    background-color: $rojo;
+}
+
+.span2{
+    background-color: $verde;
+}
+
+.span3{
+    background-color: $amarillo;
+}
+
+.span4{
+    background-color: $azul;
+}
+
+//Buscador
+#lupa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+    padding-top: 7%;
+    margin: 0 auto;
+  }
+  
+  input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-family: Inter-medium;
+    font-size: 0.75rem;
+  }
+  
+  #lupaimg{
+    width: 20px;
+    cursor: pointer;
+  }
+  
+
+//Juego
+#tabImg{
+    display: none;
+}
+
+#juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    & img{
+        width: 40vw;
+        border-radius: 25px;
+    }
+    & > span{
+        font-family: OpenSans-bold;
+        font-size: 1.20rem;
+        margin-bottom: 30px;
+    }
+}
+
+#contenidoJuego{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    & >p{
+        font-family: OpenSans-regular;
+        font-size: 1rem;
+        text-align: left;
+        padding-bottom: 15px;
+        line-height: 150%;
+    }
+    & span{
+        font-weight: bold;
+    }
+}
+
+#imagenes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    & > span{
+        font-size: 1.5rem;
+    }
+}
+
+#botones{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6%;
+}
+
+.aprobado{
+    -webkit-text-stroke: 0.5px $verde;
+}
+
+#leer, #votar{
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    margin-top: 20%;
+    font-family: Rajhdani-bold;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#leer{
+    background-color: $amarillo;
+}
+
+#votar{
+    background-color: $azul;
+}
+
+#sinopsis{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    & > span{
+        font-family: OpenSans-regular;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    & p{
+        font-family: OpenSans-regular;
+        text-align: justify;
+        font-size: 1rem;
+        line-height: 175%;
+    }
+}
+
+#anadir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: $amarillo;
+    border-radius: 50%;
+    margin-top: 40px;
+    & img{
+        width: 35px;
+        height: 40px;
+    }
+}
+
+//Footer
+#circulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: $rojo;
+    border-radius: 50%;
+    margin-top: 80px;
+    margin-bottom: 15%;
+    margin-left: 75%;
+}
+
+#circulo img{
+    width: 35px;
+    height: 40px;
+}
+
+#footerDatos{
+    font-family: Rajdhani-semibold;
+    text-align: center;
+    background-color: black;
+    color:white;
+    font-size: 0.75rem;
+    padding-bottom: 2%;
+}
+
+#footerDatos img{
+    width: 25%;
+    margin-top: 4%;
+    margin-bottom: 4%;;
+}
+
+@media (min-width: 600px) {
+    //ENCABEZADO
+    #title{
+        max-width: 500px;
+        padding-top: 100px;
+        padding-left: 0;
+    }
+
+    #imagen{
+        display: flex;
+        justify-content: center;
+    }
+
+    //MENÚ
+    hr{
+        display: none;
+    }
+
+    #burger {
+        display: none;  
+    }
+
+    #meny {
+        width: 100%;
+        height: 20vh;
+        top: 0;
+    }
+
+    #meny li{
+        border:none;
+    }
+
+    #menyAvPaa:checked ~ #meny,
+    #meny {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 8vh;
+        padding: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+        color: white;
+        position: fixed;
+    }
+
+    //Decorador
+    .span1, .span2, .span3, .span4 {
+        padding: 10px;
+    }
+
+    //Buscador 
+    input{
+        font-size: 1rem;
+    }
+    
+    #lupaimg{
+        width: 25px;
+        cursor: pointer;
+    }
+
+    //Juego
+    #juego{
+        & >span{
+            font-size: 1.5rem;
+        }
+    }
+    #botones{
+        flex-direction: row;
+        margin-top: 0%;
+    }
+
+    #tabImg{
+        display: block;
+        max-width: 320px;
+    }
+
+    #info{
+        margin-right: 50px;
+        & >p{
+            font-size: 1rem;
+        }
+    }
+
+    #movImg{
+        display: none;
+    }
+    
+    #leer{
+        margin-right: 20px;
+    }
+
+    #anadir{
+        align-self: flex-end;
+        margin-right: 9%;
+    }
+    //Círculo
+    #circulo{
+        margin-left: 47%;
+        margin-bottom: 5%;
+    }
+
+    #footerDatos img{
+        width: 20%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+}
+
+@media (min-width: 800px) {
+    #juego{
+        & >span{
+            font-size: 1.75rem;
+        }
+    }
+    #info{
+        & >p{
+            font-size: 1.25rem;
+        }
+    }
+
+    #sinopsis{
+        & p, span {
+            font-size: 1.25rem; 
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    input{
+        font-size: 1.25rem;
+    }
+      
+    #lupaimg{
+        width: 30px;
+        cursor: pointer;
+    }
+
+    //Juego
+    #juego{
+        margin-top: 70px;
+        
+        & >span{
+            margin-bottom: 70px;
+        }
+    }
+
+    #movImg{
+        display: block;
+    }
+
+    #tabImg{
+        display: none;
+    }
+
+    #imagenes{
+        margin-left: 5%;
+        & > span{
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+    }
+
+    #contenidoJuego{
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #info{
+        margin-right: 0;
+        & >p{
+            margin-bottom: 20px;
+        }
+
+    }
+
+    #tabImg{
+        max-width: 400px;
+    }
+
+    #circulo{
+        margin-top: 100px;
+    }
+}
