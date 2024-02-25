@@ -447,7 +447,7 @@ a:hover {
     margin-top: 3%;
     margin-right: 5%;
   }
-  .movButton {
+  .titNot > span {
     display: none;
   }
   #circulo {
